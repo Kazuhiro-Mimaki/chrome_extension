@@ -1,9 +1,8 @@
-const saveLead = () => {
-  alert("Button clicked!");
-};
-
-let inputBtn = document.getElementById("input-btn");
+let myLeads = [];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
 
 inputBtn.addEventListener("click", () => {
-  alert("Button clicked from addEventListener");
+  myLeads.push(inputEl.value);
+  console.log(myLeads);
 });
